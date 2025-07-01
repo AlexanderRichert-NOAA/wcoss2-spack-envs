@@ -1,2 +1,4 @@
 test_logs/
 test*-env/
+install/
+.spack-env/

@@ -1,0 +1,485 @@
+# spack-stack hash: 6df99ce
+# spack hash: f1be100187
+spack:
+  concretizer:
+    unify: when_possible
+
+  config:
+    install_tree:
+      root: $env/install
+    deprecated: true
+  modules:
+    default:
+      roots:
+        lmod: $env/install/modulefiles
+        tcl: $env/install/modulefiles
+
+  view: false
+  include:
+  - site
+  - common
+
+  specs:
+  - hdf5@1.14.5
+  packages:
+    all:
+      prefer: ['%oneapi@2024.2.1']
+      buildable: false
+    hdf5:
+      'require:': '@1.14.5 +hl +fortran +mpi +threadsafe ~szip'
+      buildable: true
+    awscli:
+      buildable: true
+    bacio:
+      buildable: true
+    boost:
+      buildable: true
+    bufr:
+      buildable: true
+    bufr_dump:
+      buildable: true
+    bufr_tranjb:
+      buildable: true
+    bufr_util:
+      buildable: true
+    cairo:
+      buildable: true
+    cdo:
+      buildable: true
+    cfitsio:
+      buildable: true
+    cfp:
+      buildable: true
+    cmake:
+      buildable: true
+    cray-parallel-netcdf:
+      buildable: true
+    crtm:
+      buildable: true
+    curl:
+      buildable: true
+    degrib:
+      buildable: true
+    dumpmb:
+      buildable: true
+    ecflow:
+      buildable: true
+    eigen:
+      buildable: true
+    emapf-c:
+      buildable: true
+    esmf:
+      buildable: true
+    fms:
+      buildable: true
+    g2:
+      buildable: true
+    g2c:
+      buildable: true
+    g2tmpl:
+      buildable: true
+    gdal:
+      buildable: true
+    gempak:
+      buildable: true
+    geos:
+      buildable: true
+    gfsio:
+      buildable: true
+    git:
+      buildable: true
+    grib_util:
+      buildable: true
+    gsl:
+      buildable: true
+    imagemagick:
+      buildable: true
+    ip:
+      buildable: true
+    ip2:
+      buildable: true
+    jasper:
+      buildable: true
+    lamp_shared:
+      buildable: true
+    landsfcutil:
+      buildable: true
+    libdap4:
+      buildable: true
+    libgeotiff:
+      buildable: true
+    libiconv:
+      buildable: true
+    libjpeg:
+      buildable: true
+    libjpeg-turbo:
+      buildable: true
+    libpng:
+      buildable: true
+    libtiff:
+      buildable: true
+    libxml2:
+      buildable: true
+    libxmlparse:
+      buildable: true
+    libxrender:
+      buildable: true
+    madis:
+      buildable: true
+    manic:
+      buildable: true
+    mapl:
+      buildable: true
+    mbedtls:
+      buildable: true
+    met:
+      buildable: true
+    metis:
+      buildable: true
+    metplus:
+      buildable: true
+    mos_shared:
+      buildable: true
+    nco:
+      buildable: true
+    ncview:
+      buildable: true
+    nemsio:
+      buildable: true
+    nemsiogfs:
+      buildable: true
+    netcdf:
+      buildable: true
+    perl:
+      buildable: true
+    pigz:
+      buildable: true
+    pio:
+      buildable: true
+    pixman:
+      buildable: true
+    prepobs:
+      buildable: true
+    prod_envir:
+      buildable: true
+    prod_util:
+      buildable: true
+    proj:
+      buildable: true
+    python:
+      buildable: true
+    readline:
+      buildable: true
+    rsync:
+      buildable: true
+    schism:
+      buildable: true
+    scotch:
+      buildable: true
+    sfcio:
+      buildable: true
+    sigio:
+      buildable: true
+    sp:
+      buildable: true
+    subversion:
+      buildable: true
+    udunits:
+      buildable: true
+    upp:
+      buildable: true
+    util_shared:
+      buildable: true
+    w3emc:
+      buildable: true
+    w3nco:
+      buildable: true
+    wgrib2:
+      buildable: true
+    wrf_io:
+      buildable: true
+    xyz2shp:
+      buildable: true
+    xz:
+      buildable: true
+    zlib:
+      buildable: true
+    antlr:
+      buildable: true
+    apr:
+      buildable: true
+    apr-util:
+      buildable: true
+    autoconf:
+      buildable: true
+    automake:
+      buildable: true
+    bdftopcf:
+      buildable: true
+    berkeley-db:
+      buildable: true
+    bison:
+      buildable: true
+    bzip2:
+      buildable: true
+    ca-certificates-mozilla:
+      buildable: true
+    diffutils:
+      buildable: true
+    elfutils:
+      buildable: true
+    expat:
+      buildable: true
+    fftw:
+      buildable: true
+    findutils:
+      buildable: true
+    flex:
+      buildable: true
+    font-util:
+      buildable: true
+    fontconfig:
+      buildable: true
+    fontsproto:
+      buildable: true
+    freetype:
+      buildable: true
+    fribidi:
+      buildable: true
+    gdbm:
+      buildable: true
+    gettext:
+      buildable: true
+    glib:
+      buildable: true
+    gmake:
+      buildable: true
+    gnuconfig:
+      buildable: true
+    gobject-introspection:
+      buildable: true
+    gperf:
+      buildable: true
+    harfbuzz:
+      buildable: true
+    help2man:
+      buildable: true
+    icu4c:
+      buildable: true
+    inputproto:
+      buildable: true
+    json-c:
+      buildable: true
+    kbproto:
+      buildable: true
+    libaec:
+      buildable: true
+    libbsd:
+      buildable: true
+    libedit:
+      buildable: true
+    libffi:
+      buildable: true
+    libfontenc:
+      buildable: true
+    libice:
+      buildable: true
+    libidn2:
+      buildable: true
+    libmd:
+      buildable: true
+    libpthread-stubs:
+      buildable: true
+    libsigsegv:
+      buildable: true
+    libsm:
+      buildable: true
+    libtool:
+      buildable: true
+    libunistring:
+      buildable: true
+    libwebp:
+      buildable: true
+    libx11:
+      buildable: true
+    libxau:
+      buildable: true
+    libxaw:
+      buildable: true
+    libxcb:
+      buildable: true
+    libxcrypt:
+      buildable: true
+    libxdmcp:
+      buildable: true
+    libxext:
+      buildable: true
+    libxfont:
+      buildable: true
+    libxmu:
+      buildable: true
+    libxpm:
+      buildable: true
+    libxt:
+      buildable: true
+    libyaml:
+      buildable: true
+    lz4:
+      buildable: true
+    m4:
+      buildable: true
+    meson:
+      buildable: true
+    mkfontdir:
+      buildable: true
+    mkfontscale:
+      buildable: true
+    nasm:
+      buildable: true
+    ncurses:
+      buildable: true
+    netcdf-cxx4:
+      buildable: true
+    ninja:
+      buildable: true
+    openblas:
+      buildable: true
+    openssh:
+      buildable: true
+    openssl:
+      buildable: true
+    pango:
+      buildable: true
+    pcre:
+      buildable: true
+    pcre2:
+      buildable: true
+    pkgconf:
+      buildable: true
+    popt:
+      buildable: true
+    py-botocore:
+      buildable: true
+    py-bottleneck:
+      buildable: true
+    py-cftime:
+      buildable: true
+    py-colorama:
+      buildable: true
+    py-cython:
+      buildable: true
+    py-docutils:
+      buildable: true
+    py-flit-core:
+      buildable: true
+    py-jmespath:
+      buildable: true
+    py-netcdf4:
+      buildable: true
+    py-numexpr:
+      buildable: true
+    py-numpy:
+      buildable: true
+    py-packaging:
+      buildable: true
+    py-pandas:
+      buildable: true
+    py-pip:
+      buildable: true
+    py-pyasn1:
+      buildable: true
+    py-python-dateutil:
+      buildable: true
+    py-pytz:
+      buildable: true
+    py-pyyaml:
+      buildable: true
+    py-rsa:
+      buildable: true
+    py-s3transfer:
+      buildable: true
+    py-setuptools:
+      buildable: true
+    py-setuptools-scm:
+      buildable: true
+    py-setuptools-scm-git-archive:
+      buildable: true
+    py-six:
+      buildable: true
+    py-tomli:
+      buildable: true
+    py-typing-extensions:
+      buildable: true
+    py-urllib3:
+      buildable: true
+    py-versioneer:
+      buildable: true
+    py-wheel:
+      buildable: true
+    py-xarray:
+      buildable: true
+    qt:
+      buildable: true
+    re2c:
+      buildable: true
+    renderproto:
+      buildable: true
+    sqlite:
+      buildable: true
+    tar:
+      buildable: true
+    unixodbc:
+      buildable: true
+    utf8proc:
+      buildable: true
+    util-linux-uuid:
+      buildable: true
+    util-macros:
+      buildable: true
+    which:
+      buildable: true
+    xcb-proto:
+      buildable: true
+    xextproto:
+      buildable: true
+    xproto:
+      buildable: true
+    xtrans:
+      buildable: true
+    xxhash:
+      buildable: true
+    zstd:
+      buildable: true
+    atlas:
+      buildable: true
+    eckit:
+      buildable: true
+    fckit:
+      buildable: true
+    gsl-lite:
+      buildable: true
+    qhull:
+      buildable: true
+    gftl-shared:
+      buildable: true
+    nccmp:
+      buildable: true
+    cray-mpich:
+      buildable: true
+    gcc-runtime:
+      buildable: true
+    glibc:
+      buildable: true
+    parallelio:
+      buildable: true
+    pkg-config:
+      buildable: true
+    ecbuild:
+      buildable: true
+    zlib-ng:
+      buildable: true
+    intel-oneapi-runtime:
+      buildable: true
+  upstreams:
+    spack-stack-1.9.2rc3-nco-oneapi-2024.2.1:
+      install_tree: /lfs/h1/emc/nceplibs/noscrub/dev-spack-stack-test/spack-stack-1.9.2rc3/envs/nco-oneapi-2024.2.1/install
